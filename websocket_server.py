@@ -5,7 +5,9 @@ import pygame
 from pathlib import Path
 from network import NetworkManager
 from emailHandler import EmailHandler
+import threading
 import time
+import eventlet
 from playsound import playsound
 from sttHandler import SttPipeline
 import base64
@@ -15,7 +17,7 @@ import os
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'secret!'
 socketio = SocketIO(app, cors_allowed_origins="*")
-
+pygame.mixer.init()
 # email_handler = EmailHandler("credentials.json")
 report_fpath = "docs/sample.pdf"
 creds = json.load(open(os.environ['AGENTCONFIG']))
@@ -31,6 +33,9 @@ def play_audio(file_path):
         pygame.mixer.music.load(file_path)
         pygame.mixer.music.play()
         network_manager.send_message("start")
+        while pygame.mixer.music.get_busy():
+            eventlet.sleep(0.1)  # Yield control for event processing.
+        network_manager.send_message("stop")
     except pygame.error as e:
         print(f"Error loading/playing audio: {e}")
 
@@ -117,13 +122,13 @@ def handle_audio(data):
             network_manager.send_message(udp_signal)
             time.sleep(1)
             if audio_player == "server":
-                network_manager.send_message("start")
-                play_audio(answer)
-                network_manager.send_message("stop")
+                thread = threading.Thread(target=play_audio, args=(answer,))
+                thread.start()
+                
                 if has_alert and os.path.exists(alert_msg):
-                    network_manager.send_message("start")
-                    play_audio(alert_msg)
-                    network_manager.send_message("stop")
+                    thread = threading.Thread(target=play_audio, args=(alert_msg,))
+                    thread.start()
+                    # network_manager.send_message("stop")
             if str(udp_signal) == "1.13":
                 # send an email with the report to Khalid
                 pass

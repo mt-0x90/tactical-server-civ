@@ -115,11 +115,8 @@ class RagPipeline:
         Close it, label it as restricted, share it with my supervisor, and archive it. Also, increase thermal coverage of the area, Take me to Bandar Abbas Naval port and show me the imagery there, Tell me more about this port?,Using this imagery, identify all naval ships within the naval port of Bandar Abbas,
         Using the last optical imagery,  what changes are occurring within the naval port? , Highlight the changes using the latest SAR with listing them and if there is any abnormal activity? , I am interested in the IRGC area. What military equipment is present in the IRGC area?,
         Is there any operational activity happening here?, What are your recommendations for the departed ships?,Identify all military ships in the last optical imagery in Area 1 and label,Why are these ships there?, Zoom into the Bagheri drone ship and provide more information    
-
-
-
-
-        Answer with I do not know the answer or say you do not have the updated data..    
+        Answer with I do not know the answer or say you do not have the updated data. Avoid providing long answers. limit your answer to just one sentence or at most 3 sentences. Do not say you are AI.
+        If you did not understand the question, say you don't understand it.
         """
         self.human_template_guard = "{question}"
         self.audio_fpath = None
