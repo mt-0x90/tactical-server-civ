@@ -100,6 +100,8 @@ def handle_audio(data):
                 with open(audio_file, "wb") as f:
                     f.write(audio_bytes)
                 user_text = stt_handler.get_text(audio_file, is_wav=True)
+                if len(user_text) < 2:
+                    user_text = "error"
             else:
                 user_text = scene_txt
             # Simulate audio processing (e.g., speech-to-text, etc.)

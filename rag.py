@@ -119,6 +119,8 @@ class RagPipeline:
         If you did not understand the question, say you don't understand it.
         """
         self.human_template_guard = "{question}"
+        self.template_check_rag = "You are a useful assistant, given input from user your is classify if it the user knows or does not the answer. Respond with yes if the user is confident in the input indicating that he knows the answer otherwise respond with no"
+        self.human_template_check_rag = "{question}"
         self.audio_fpath = None
         self.audio_model = None
         self.text_model = None
@@ -129,6 +131,7 @@ class RagPipeline:
         self.chatbot_chain = self.get_chain(self.template, self.human_template)
         self.chatbot_chain_guard = self.get_chain(self.template_guard, self.human_template_guard)
         self.classifier_chain = self.get_chain(self.template_class, self.human_template_class)
+        self.check_rag_chain = self.get_chain(self.template_check_rag, self.human_template_check_rag)
         self.tool_call_chain = self.search_prompt | self.text_model
         #self.network_manager.send_message("1.2")
         
@@ -182,6 +185,11 @@ class RagPipeline:
 
     def run_chatbot(self, user_query):
         model_output = self.chatbot_chain.invoke({"question":user_query})
+        results = model_output if self.use_ollama else model_output.content
+        return results
+    
+    def run_check_rag(self, user_query):
+        model_output = self.check_rag_chain.invoke({"question":user_query})
         results = model_output if self.use_ollama else model_output.content
         return results
     
@@ -266,6 +274,8 @@ class RagPipeline:
     
     def handle_user_text(self, user_text, voice_id="chris", is_local=False, scene_type="civil"):
         scen_t = "civil" if scene_type == "civilian" else scene_type
+        if user_text == "error":
+            return bot_answer, "-1", False
         his_answer = self.check_scenario(user_text, voice_id.lower(), scen_t)
         if his_answer:
             udp_signal = his_answer['udp']
@@ -275,9 +285,18 @@ class RagPipeline:
             bot_answer = known_qa['answer']
         else:
             bot_answer = self.run_chatbot_with_guard(user_text).replace("Falcon","")
-        if is_local:
-            return bot_answer, None, False
-        return self.handle_user_audio(bot_answer, voice_id.lower()), None, False
+            check_rag = self.run_check_rag(bot_answer).replace("Falcon","").lower()
+            if check_rag == "yes" or check_rag == "Yes":
+                if is_local:
+                    return bot_answer, None, False
+                else:
+                    return self.handle_user_audio(bot_answer, voice_id.lower()), "-1", False
+            else:
+                bot_answer = "audios/matilda/default_fallback.mp3"
+                if is_local:
+                    return "Sorry, I don't have enough data to answer your question.", None, False
+                else:
+                    return bot_answer, "-1", False
 
 # import time
 # rag = RagPipeline()
@@ -301,5 +320,5 @@ class RagPipeline:
 #     user_input = input(":> ")
 #     if user_input == "q":
 #         break
-#     answer = rag.run_chatbot(user_input)
+#     answer = rag.handle_user_text(user_input, is_local=True)
 #     print(f"Bot: {answer}")

@@ -71,5 +71,5 @@ class EmailHandler:
     except Exception as e:
       print(f"Exception: {e}")
 
-# emailh = EmailHandler(sys.argv[1])
-# emailh.send_email("mthandazondhlovu34@gmail.com", [sys.argv[2]])
+emailh = EmailHandler(sys.argv[1])
+emailh.send_email("mthandazondhlovu34@gmail.com", [sys.argv[2]])

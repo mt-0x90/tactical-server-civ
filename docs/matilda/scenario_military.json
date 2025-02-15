@@ -1,11 +1,6 @@
 [
     {
         "udp": "2.1",
-        "question": "Hello Tactica",
-        "answer": "audios/matilda/1_5369.mp3"
-    },
-    {
-        "udp": "2.1",
         "question": "Hello Tektika",
         "answer": "audios/matilda/1_5369.mp3"
     },
@@ -13,16 +8,6 @@
         "udp": "2.2",
         "question": "Tactica, generate and zoom-in into an area of interest 900 kilometers  West to East by 350 kilometers North to South, centered over the Straits of Hormuz",
         "answer": "audios/matilda/1_11874.mp3"
-    },
-    {
-        "udp": "2.2",
-        "question": "Tektika, generate and zoom-in into an area of interest 900 kilometers  West to East by 350 kilometers North to South, centered over the Straits of Hormuz",
-        "answer": "audios/matilda/1_11874.mp3"
-    },
-    {
-        "udp": "2.3",
-        "question": "Identify all Naval ports, military, and dual-use airfields within the area of interest.",
-        "answer": "audios/matilda/1_4669.mp3"
     },
     {
         "udp": "2.3",
@@ -38,16 +23,6 @@
         "udp": "2.5",
         "question": "Identify and generate all fixed and mobile surface to air missile systems and aerial surveillance sites.",
         "answer": "audios/matilda/1_9818.mp3"
-    },
-    {
-        "udp": "2.6",
-        "question": "Tactica, Which airfield has the most military activity?",
-        "answer": "audios/matilda/1_3303.mp3"
-    },
-    {
-        "udp": "2.6",
-        "question": "Tektika, Which airfield has the most military activity?",
-        "answer": "audios/matilda/1_3303.mp3"
     },
     {
         "udp": "2.6",
@@ -73,11 +48,6 @@
         "udp": "2.10",
         "question": "Why is there no optical imagery from the last week?",
         "answer": "audios/matilda/1_15119.mp3"
-    },
-    {
-        "udp": "2.11",
-        "question": "analyze the latest two sar imagery ",
-        "answer": "audios/matilda/1_19243.mp3"
     },
     {
         "udp": "2.11",
@@ -111,11 +81,6 @@
     },
     {
         "udp": "2.17",
-        "question": "Is it a threat to UAE military forces if deployed from Bandar Abbas or Konarak Airports?",
-        "answer": "audios/matilda/1_14767.mp3"
-    },
-    {
-        "udp": "2.17",
         "question": "The Z-TEP threat to UA military forces if deployed from Banda Abbas or Konurak Airpods.",
         "answer": "audios/matilda/1_14767.mp3"
     },
@@ -136,17 +101,12 @@
     },
     {
         "udp": "2.20",
-        "question": "Yes. Give more information about the NPP Alert.",
-        "answer": "audios/matilda/1_2636.mp3"
-    },
-    {
-        "udp": "2.20",
-        "question": "Yes. Give more information about the NPT Alert.",
+        "question": "Yes. Give more information about the BNPP Alert.",
         "answer": "audios/matilda/1_2636.mp3"
     },
     {
         "udp": "2.21",
-        "question": "I dont know much about this location. What is BNPP?",
+        "question": "I don\u2019t know much about this location. What is BNPP?",
         "answer": "audios/matilda/1_13762.mp3"
     },
     {
@@ -161,7 +121,7 @@
     },
     {
         "udp": "2.24",
-        "question": "Close it, Label it as restricted, share it with my supervisor and archive it. Also, increase thermal coverage of the area.",
+        "question": "Close it, and Label it as restricted. Also, increase thermal coverage of the area.",
         "answer": "audios/matilda/1_2681.mp3"
     },
     {
@@ -180,18 +140,8 @@
         "answer": "audios/matilda/1_7369.mp3"
     },
     {
-        "udp": "2.27",
-        "question": "Tell me more about this pot?",
-        "answer": "audios/matilda/1_7369.mp3"
-    },
-    {
         "udp": "2.28",
         "question": "Using this imagery, identify all naval ships within the naval port of Bandar Abbas",
-        "answer": "audios/matilda/1_657.mp3"
-    },
-    {
-        "udp": "2.28",
-        "question": "Using this imagery, identify all naval ships within the naval pot of Bandar Abbas",
         "answer": "audios/matilda/1_657.mp3"
     },
     {
@@ -200,33 +150,28 @@
         "answer": "audios/matilda/1_17624.mp3"
     },
     {
-        "udp": "2.29",
-        "question": "Using the last optical imagery,  what changes are occurring within the naval pot?",
-        "answer": "audios/matilda/1_17624.mp3"
-    },
-    {
         "udp": "2.30",
-        "question": "Highlight the changes using the latest sar with listing them and if there is any abnormal activity?",
+        "question": "Highlight and List all changes using the latest SAR. Also, indicate if there is any abnormal activity?",
         "answer": "audios/matilda/1_19669.mp3"
     },
     {
         "udp": "2.31",
-        "question": "I am interested in the IRGC area. What military equipment is present in the IRGC area?",
+        "question": "I am interested in the IRGC area. What military equipment is present there?",
         "answer": "audios/matilda/1_1661.mp3"
     },
     {
         "udp": "2.32",
-        "question": "Zoom into the training and label each unit",
+        "question": "Zoom into the training area and label each unit",
         "answer": "audios/matilda/1_4919.mp3"
     },
     {
         "udp": "2.33",
-        "question": "What changes are observed in sar and optical imagery?",
+        "question": "What changes are observed in sar and optical imagery in the IRGC?",
         "answer": "audios/matilda/1_15346.mp3"
     },
     {
         "udp": "2.34",
-        "question": "Is there any operational activity happening here? ",
+        "question": "Is there any operational activity happening at the IRGC Area? ",
         "answer": "audios/matilda/1_17007.mp3"
     },
     {
@@ -236,27 +181,22 @@
     },
     {
         "udp": "2.36",
-        "question": "Identify all military ships in the last optical imagery in Area 1 and label.",
+        "question": "I am interested in Area 1. Identify and label all military ships in the last optical imagery of Area 1.",
         "answer": "audios/matilda/1_13210.mp3"
     },
     {
         "udp": "2.37",
-        "question": "Why are these ships there?",
+        "question": "Why are these ships here?",
         "answer": "audios/matilda/1_10914.mp3"
     },
     {
         "udp": "2.38",
-        "question": "Zoom into the Bagheri drone ship and provide more information",
-        "answer": "audios/matilda/1_14315.mp3"
-    },
-    {
-        "udp": "2.38",
-        "question": "Zoom into the Bikari drone ship and provide more information.",
+        "question": "Zoom into the Bagheri drone carrier and provide more information",
         "answer": "audios/matilda/1_14315.mp3"
     },
     {
         "udp": "2.39",
-        "question": "Standby",
+        "question": "Stand by",
         "answer": "audios/matilda/1_15351.mp3"
     }
 ]

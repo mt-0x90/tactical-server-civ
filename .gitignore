@@ -4,6 +4,7 @@ __pycache__/
 *$py.class
 sendgrid.env
 credentials.json
+tokens.json
 # projects excludes
 # docs/
 # docs
