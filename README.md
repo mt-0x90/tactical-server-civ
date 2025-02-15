@@ -1,1 +1,1 @@
-# tactical-server-civ
+# tacticalai-server

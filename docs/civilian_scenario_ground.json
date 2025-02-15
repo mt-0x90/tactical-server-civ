@@ -1,0 +1,146 @@
+[
+    {
+        "question": "Hello, Tactica",
+        "audio": "sceneground/audioscivilian/scenario_1_1.mp3"
+    },
+    {
+        "question": "Zoom into the UAE.",
+        "audio": "sceneground/audioscivilian/scenario_1_2.mp3"
+    },
+    {
+        "question": "What are the commercial ports in the UAE?",
+        "audio": "sceneground/audioscivilian/scenario_1_3.mp3"
+    },
+    {
+        "question": "Zoom into Khalifa Port Economic Zone",
+        "audio": "sceneground/audioscivilian/scenario_1_4.mp3"
+    },
+    {
+        "question": "For the ships currently here, What is their  vessel movement for the last 24 hours?",
+        "audio": "sceneground/audioscivilian/scenario_1_5.mp3"
+    },
+    {
+        "question": "Zoom into the port itself",
+        "audio": "sceneground/audioscivilian/scenario_1_6.mp3"
+    },
+    {
+        "question": "Enhance the optical imagery and detect all ships",
+        "audio": "sceneground/audioscivilian/scenario_1_7.mp3"
+    },
+    {
+        "question": "What assets are in the port?",
+        "audio": "sceneground/audioscivilian/scenario_1_8.mp3"
+    },
+    {
+        "question": "How many staff and visitors are within the port area?  ",
+        "audio": "sceneground/audioscivilian/scenario_1_9.mp3"
+    },
+    {
+        "question": "What is the water depth in the port area?",
+        "audio": "sceneground/audioscivilian/scenario_1_10.mp3"
+    },
+    {
+        "question": "Provide a 3D visualization of the port's underwater topography",
+        "audio": "sceneground/audioscivilian/scenario_1_11.mp3"
+    },
+    {
+        "question": "Yes, get the image",
+        "audio": "sceneground/audioscivilian/scenario_1_12.mp3"
+    },
+    {
+        "question": "What is the latest known information about this ship?",
+        "audio": "sceneground/audioscivilian/scenario_1_13.mp3"
+    },
+    {
+        "question": "What is the trajectory of this ship?",
+        "audio": "sceneground/audioscivilian/scenario_1_14.mp3"
+    },
+    {
+        "question": "Open and analyse the new image\nDetect and identify the ships new location and any other suspected activity of the ship",
+        "audio": "sceneground/audioscivilian/scenario_1_15.mp3"
+    },
+    {
+        "question": "Generate a report on these two ships and send it to Khalid",
+        "audio": "sceneground/audioscivilian/scenario_1_16.mp3"
+    },
+    {
+        "question": "Yes. Also open the report.",
+        "audio": "sceneground/audioscivilian/scenario_1_17.mp3"
+    },
+    {
+        "question": "Close the report.",
+        "audio": "sceneground/audioscivilian/scenario_1_18.mp3"
+    },
+    {
+        "question": "Yes,  Lets look at the urban areas of Abu Dhabi, Zoom into Khalifa City and do land cover classification.",
+        "audio": "sceneground/audioscivilian/scenario_1_19.mp3"
+    },
+    {
+        "question": "What are the newly constructed buildings in Khalifa City in 2024?",
+        "audio": "sceneground/audioscivilian/scenario_1_20.mp3"
+    },
+    {
+        "question": "How many vehicles are in the imagery in this area?",
+        "audio": "sceneground/audioscivilian/scenario_1_21.mp3"
+    },
+    {
+        "question": "Identify all palm trees in the region and surrounding main roads.",
+        "audio": "sceneground/audioscivilian/scenario_1_22.mp3"
+    },
+    {
+        "question": "Run red weevil analysis on the palm trees.",
+        "audio": "sceneground/audioscivilian/scenario_1_23.mp3"
+    },
+    {
+        "question": "What is the current traffic density around the region?",
+        "audio": "sceneground/audioscivilian/scenario_1_24.mp3"
+    },
+    {
+        "question": "Zoom into Zayed airport?",
+        "audio": "sceneground/audioscivilian/scenario_1_25.mp3"
+    },
+    {
+        "question": "Identify all airplanes and what is their operational activity.",
+        "audio": "sceneground/audioscivilian/scenario_1_26.mp3"
+    },
+    {
+        "question": "Identify all A380 airplanes in the airport.",
+        "audio": "sceneground/audioscivilian/scenario_1_27.mp3"
+    },
+    {
+        "question": "Zoom into the one connected to the terminal.",
+        "audio": "sceneground/audioscivilian/scenario_1_28.mp3"
+    },
+    {
+        "question": "Run model logic analysis on the airplane.",
+        "audio": "sceneground/audioscivilian/scenario_1_29.mp3"
+    },
+    {
+        "question": "Generate a 3D of the Airbus A380",
+        "audio": "sceneground/audioscivilian/scenario_1_30.mp3"
+    },
+    {
+        "question": "Do you have high frequency imagery over the airport?  ",
+        "audio": "sceneground/audioscivilian/scenario_1_31.mp3"
+    },
+    {
+        "question": "What are the changes in the western runway over the last 1 hour",
+        "audio": "sceneground/audioscivilian/scenario_1_32.mp3"
+    },
+    {
+        "question": "Put and explain the thermal imagery.",
+        "audio": "sceneground/audioscivilian/scenario_1_33.mp3"
+    },
+    {
+        "question": "Standby",
+        "audio": "sceneground/audioscivilian/scenario_1_34.mp3"
+    },
+    {
+        "question": "What kind of data can the system support? ",
+        "audio": "sceneground/audioscivilian/scenario_1_35.mp3"
+    },
+    {
+        "question": "Open the notification tab",
+        "audio": "sceneground/audioscivilian/scenario_1_36.mp3"
+    }
+]

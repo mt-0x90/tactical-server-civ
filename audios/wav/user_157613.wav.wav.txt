@@ -1,0 +1,1 @@
+ Identify all airplanes and what is their operational activity.

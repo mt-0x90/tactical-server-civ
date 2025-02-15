@@ -1,0 +1,47 @@
+question,category
+Theme: General,General
+"Hello, Tactica",Category H = Chitchat
+Zoom into the UAE.,Category A
+What are the commercial ports in the UAE?,Category G
+Theme: Maritime Security,Category A
+Zoom into Khalifa Port Economic Zone,Category A
+"For the ships currently here, What is their  vessel movement for the last 24 hours?",Category A
+"Theme: Port Activities, and Hybrid Analytics",Category C
+Zoom into the port itself,Category C
+Enhance the optical imagery and detect all ships,Category C
+What assets are in the port?,Category: Port Activities
+How many staff and visitors are within the port area?,Category: Port Activities
+What is the water depth in the port area?,Category A
+Provide a 3D visualization of the port's underwater topography,"Category C = Port Activities, and Hybrid Analytics"
+"Theme: Alerts and Full Analytics; Alert to be called:
+Alert; One ship has been inactive on AIS for 30 minutes around Fujairah port. A multispectral satellite is scheduled to pass over its location in one minute. Would you like to request a Satellite image collection?",Alerts and Full Analytics
+"Yes, get the image",Other
+What is the latest known information about this ship?,Category B
+What is the trajectory of this ship?,Category B
+"Open and analyse the new image
+Detect and identify the ships new location and any other suspected activity of the ship",Category A
+Generate a report on these two ships and send it to Khalid,Category F
+Yes. Also open the report.,Category F
+Close the report.,Category: Other
+Theme: Urban Planning,Category D
+"Yes, Let’s look at the urban areas of Abu Dhabi, Zoom into Khalifa City and do land cover classification.",Category: Urban Planning
+What are the newly constructed buildings in Khalifa City in 2024?,Urban Planning
+How many vehicles are in the imagery in this area?,Category D = Urban Planning
+Identify all palm trees in the region and surrounding main roads.,Category D = Urban Planning
+Run red weevil analysis on the palm trees.,Category D = Urban Planning
+What is the current traffic density around the region?,Category D = Urban Planning
+Theme: Airports,Category E
+Zoom into Zayed airport?,Category E
+Identify all airplanes and what is their operational activity.,Category H
+Identify all A380 airplanes in the airport.,Category E
+Zoom into the one connected to the terminal.,Category E
+Run model logic analysis on the airplane.,Category E
+Generate a 3D of the Airbus A380,Category F = System Information
+Do you have high frequency imagery over the airport?,Category E
+What are the changes in the western runway over the last 1 hour,Category F
+Put and explain the thermal imagery.,Category: Port Activities
+Standby,Category: Chitchat
+Operator,Category H
+Theme: System Information,Other
+What kind of data can the system support?,F
+Open the notification tab,F

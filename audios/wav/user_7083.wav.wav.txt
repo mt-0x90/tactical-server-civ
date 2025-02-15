@@ -1,0 +1,1 @@
+ Open and analyze the new image detected and identify the ship's new location and any other suspected activity of the ship.

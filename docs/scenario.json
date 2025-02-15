@@ -1,0 +1,227 @@
+[
+    {
+        "udp": "Theme: General",
+        "question": "Theme: General",
+        "answer": "audios/1_18328.mp3"
+    },
+    {
+        "udp": "1",
+        "question": "Hello, Tactica",
+        "answer": "audios/1_9627.mp3"
+    },
+    {
+        "udp": "2",
+        "question": "Zoom into the UAE.",
+        "answer": "audios/1_17484.mp3"
+    },
+    {
+        "udp": "3",
+        "question": "What are the commercial ports in the UAE?",
+        "answer": "audios/1_18660.mp3"
+    },
+    {
+        "udp": "Theme: Maritime Security",
+        "question": "Theme: Maritime Security",
+        "answer": "audios/1_1198.mp3"
+    },
+    {
+        "udp": "4",
+        "question": "Zoom into Khalifa Port Economic Zone",
+        "answer": "audios/1_17368.mp3"
+    },
+    {
+        "udp": "5",
+        "question": "For the ships currently here, What is their  vessel movement for the last 24 hours?",
+        "answer": "audios/1_11041.mp3"
+    },
+    {
+        "udp": "Theme: Port Activities, and Hybrid Analytics",
+        "question": "Theme: Port Activities, and Hybrid Analytics",
+        "answer": "audios/1_6903.mp3"
+    },
+    {
+        "udp": "6",
+        "question": "Zoom into the port itself",
+        "answer": "audios/1_7845.mp3"
+    },
+    {
+        "udp": "7",
+        "question": "Enhance the optical imagery and detect all ships",
+        "answer": "audios/1_17910.mp3"
+    },
+    {
+        "udp": "8",
+        "question": "What assets are in the port?",
+        "answer": "audios/1_13245.mp3"
+    },
+    {
+        "udp": "8",
+        "question": "What acids are in the port?",
+        "answer": "audios/1_13245.mp3"
+    },
+    {
+        "udp": "9",
+        "question": "How many staff and visitors are within the port area?",
+        "answer": "audios/1_12298.mp3"
+    },
+    {
+        "udp": "10",
+        "question": "What is the water depth in the port area?",
+        "answer": "audios/1_7437.mp3"
+    },
+    {
+        "udp": "11",
+        "question": "Provide a 3D visualization of the port's underwater topography",
+        "answer": "audios/1_8106.mp3"
+    },
+    {
+        "udp": "Theme: Alerts and Full Analytics; Alert to be called:\nAlert; One ship has been inactive on AIS for 30 minutes around Fujairah port. A multispectral satellite is scheduled to pass over its location in one minute. Would you like to request a Satellite image collection?",
+        "question": "Theme: Alerts and Full Analytics; Alert to be called:\nAlert; One ship has been inactive on AIS for 30 minutes around Fujairah port. A multispectral satellite is scheduled to pass over its location in one minute. Would you like to request a Satellite image collection?",
+        "answer": "audios/1_3452.mp3"
+    },
+    {
+        "udp": "12",
+        "question": "Yes, get the image",
+        "answer": "audios/1_15311.mp3"
+    },
+    {
+        "udp": "13",
+        "question": "What is the latest known information about this ship?",
+        "answer": "audios/1_19840.mp3"
+    },
+    {
+        "udp": "14",
+        "question": "What is the trajectory of this ship?",
+        "answer": "audios/1_7769.mp3"
+    },
+    {
+        "udp": "15",
+        "question": "Open and analyse the new image\nDetect and identify the ships new location and any other suspected activity of the ship",
+        "answer": "audios/1_7036.mp3"
+    },
+    {
+        "udp": "16",
+        "question": "Generate a report on these two ships and send it to Khalid",
+        "answer": "audios/1_16708.mp3"
+    },
+    {
+        "udp": "17",
+        "question": "Yes. Also open the report.",
+        "answer": "audios/1_15382.mp3"
+    },
+    {
+        "udp": "18",
+        "question": "Close the report.",
+        "answer": "audios/1_3889.mp3"
+    },
+    {
+        "udp": "Theme: Urban Planning",
+        "question": "Theme: Urban Planning",
+        "answer": "audios/1_10853.mp3"
+    },
+    {
+        "udp": "19",
+        "question": "Yes, Let\u2019s look at the urban areas of Abu Dhabi, Zoom into Khalifa City and do land cover classification.",
+        "answer": "audios/1_2423.mp3"
+    },
+    {
+        "udp": "20",
+        "question": "What are the newly constructed buildings in Khalifa City in 2024?",
+        "answer": "audios/1_8578.mp3"
+    },
+    {
+        "udp": "21",
+        "question": "How many vehicles are in the imagery in this area?",
+        "answer": "audios/1_1902.mp3"
+    },
+    {
+        "udp": "22",
+        "question": "Identify all palm trees in the region and surrounding main roads.",
+        "answer": "audios/1_1566.mp3"
+    },
+    {
+        "udp": "23",
+        "question": "Run red weevil analysis on the palm trees.",
+        "answer": "audios/1_14448.mp3"
+    },
+    {
+        "udp": "24",
+        "question": "What is the current traffic density around the region?",
+        "answer": "audios/1_3540.mp3"
+    },
+    {
+        "udp": "Theme: Airports",
+        "question": "Theme: Airports",
+        "answer": "audios/1_17677.mp3"
+    },
+    {
+        "udp": "25",
+        "question": "Zoom into Zayed airport?",
+        "answer": "audios/1_15749.mp3"
+    },
+    {
+        "udp": "26",
+        "question": "Identify all airplanes and what is their operational activity.",
+        "answer": "audios/1_193.mp3"
+    },
+    {
+        "udp": "27",
+        "question": "Identify all A380 airplanes in the airport.",
+        "answer": "audios/1_13825.mp3"
+    },
+    {
+        "udp": "28",
+        "question": "Zoom into the one connected to the terminal.",
+        "answer": "audios/1_18962.mp3"
+    },
+    {
+        "udp": "29",
+        "question": "Run model logic analysis on the airplane.",
+        "answer": "audios/1_16529.mp3"
+    },
+    {
+        "udp": "30",
+        "question": "Generate a 3D of the Airbus A380",
+        "answer": "audios/1_12696.mp3"
+    },
+    {
+        "udp": "31",
+        "question": "Do you have high frequency imagery over the airport?",
+        "answer": "audios/1_11801.mp3"
+    },
+    {
+        "udp": "32",
+        "question": "What are the changes in the western runway over the last 1 hour",
+        "answer": "audios/1_5736.mp3"
+    },
+    {
+        "udp": "33",
+        "question": "Put and explain the thermal imagery.",
+        "answer": "audios/1_2244.mp3"
+    },
+    {
+        "udp": "34",
+        "question": "Standby",
+        "answer": "audios/1_8168.mp3"
+    },
+    {
+        "udp": NaN,
+        "question": "Operator",
+        "answer": "audios/1_3245.mp3"
+    },
+    {
+        "udp": "Theme: System Information",
+        "question": "Theme: System Information",
+        "answer": "audios/1_11313.mp3"
+    },
+    {
+        "udp": "35",
+        "question": "What kind of data can the system support?",
+        "answer": "audios/1_6285.mp3"
+    },
+    {
+        "udp": "36",
+        "question": "Open the notification tab",
+        "answer": "audios/1_6109.mp3"
+    }
+]

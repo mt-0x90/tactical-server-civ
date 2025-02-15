@@ -1,0 +1,37 @@
+ground,prediction,time,method
+"Open and analyse the new image
+Detect and identify the ships new location and any other suspected activity of the ship","Open and analyze the new image, detect and identify the ship's new location and any other suspected activity of the ship.",2.6992740631103516,cloud-a100
+Run model logic analysis on the airplane.,run model logic analysis on the airplane,0.9268100261688232,cloud-a100
+Zoom into the one connected to the terminal.,zoom into the one connected to the terminal,0.7250747680664062,cloud-a100
+What is the trajectory of this ship?,What is the trajectory of the ship?,0.7604861259460449,cloud-a100
+Generate a report on these two ships and send it to Khalid,Generate a report on these two ships and send it to Khalid.,0.7599780559539795,cloud-a100
+Yes. Also open the report.,"Yes, also open the report.",1.6376430988311768,cloud-a100
+What is the latest known information about this ship?,What is the latest known information about this ship?,0.7408921718597412,cloud-a100
+"Yes, get the image","Yes, get the image.",0.6918489933013916,cloud-a100
+What is the water depth in the port area?,What is the water depth in the port area?,0.7158248424530029,cloud-a100
+Provide a 3D visualization of the port's underwater topography,provide a 3D visualization of the port's underwater topography.,0.8017699718475342,cloud-a100
+Zoom into the UAE.,Zoom into the UAE.,0.7050881385803223,cloud-a100
+What are the commercial ports in the UAE?,What are the commercial ports in the UAE?,1.5640509128570557,cloud-a100
+Enhance the optical imagery and detect all ships,Enhance the optical imagery and detect all ships.,0.9204549789428711,cloud-a100
+Zoom into the port itself,Zoom into the port itself,0.6971769332885742,cloud-a100
+Zoom into Khalifa Port Economic Zone,Zoom into Khalifa port economic zone,0.7360579967498779,cloud-a100
+"For the ships currently here, What is their  vessel movement for the last 24 hours?","For the ships currently here, what is their vessel movement for the last 24 hours?",0.820404052734375,cloud-a100
+What assets are in the port?,What acids are in the port?,0.7176170349121094,cloud-a100
+How many staff and visitors are within the port area?,How many staff and visitors are within the port area?,0.6273458003997803,cloud-a100
+Standby,Stand by.,0.5917491912841797,cloud-a100
+What are the newly constructed buildings in Khalifa City in 2024?,What are the newly constructed buildings in Khalifa city in 2024?,0.8153538703918457,cloud-a100
+How many vehicles are in the imagery in this area?,how many vehicles are in the imagery in this area,0.6936740875244141,cloud-a100
+What kind of data can the system support?,What kind of data can the system support?,0.7528350353240967,cloud-a100
+Run red weevil analysis on the palm trees.,run red weevil analysis on the palm trees.,0.6560146808624268,cloud-a100
+Open the notification tab,Open the notification tab.,0.8758711814880371,cloud-a100
+Identify all palm trees in the region and surrounding main roads.,Identify all palm trees in the region and surrounding main roads.,0.7206070423126221,cloud-a100
+Identify all airplanes and what is their operational activity.,Identify all airplanes and what is their operational activity.,1.1226329803466797,cloud-a100
+What are the changes in the western runway over the last 1 hour,What are the changes in the western runway over the last one hour?,1.0522818565368652,cloud-a100
+Put and explain the thermal imagery.,Put and explain the thermal imagery.,0.705888032913208,cloud-a100
+Identify all A380 airplanes in the airport.,Identify all A380 airplanes in the airport.,0.8011369705200195,cloud-a100
+"Yes, Let’s look at the urban areas of Abu Dhabi, Zoom into Khalifa City and do land cover classification.","Yes, let's look at the urban areas of Abu Dhabi, zoom into Khalifa city and do land cover classification.",0.7535190582275391,cloud-a100
+Do you have high frequency imagery over the airport?,Do you have high frequency imagery over the airport?,0.7809031009674072,cloud-a100
+Zoom into Zayed airport?,zoom into Zayed Airport.,0.7165708541870117,cloud-a100
+What is the current traffic density around the region?,What is the current traffic density around the region?,0.7168428897857666,cloud-a100
+Generate a 3D of the Airbus A380,Generate 3D of the Airbus A380,0.7156229019165039,cloud-a100
+Close the report.,Close the report.,0.8180751800537109,cloud-a100
