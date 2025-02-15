@@ -5,7 +5,7 @@
 4,Identify all island-based fixed coastal defensive and anti-shipping installations ,Identifying and generating all island-based fixed coastal defensive and anti-shipping installations
 5,Identify and generate all fixed and mobile surface to air missile systems and aerial surveillance sites.,identifying and generating all detected fixed and mobile surface to air missile systems and aerial surveillance sites within the area of interest
 6,"Tactica, Which airfield has the most military activity?","Based on the analysis, Konarak airfield, a dual-use airport, appears to have the highest and most consistent level of activity."
-7,Zoom into the airport and tell me. What satellite imagery do you have over this airport? ,Zooming into the airport. Confirmed. there are 7 satellite images available from the last two weeks. This includes 4 optical images and 3 sar images. Let me know if you’d like to analyze them further
+7,Zoom into the airport and tell me. What satellite imagery do you have over this airport? ,Zooming into the airport. Confirmed. there are 7 satellite images available from the last two weeks. This includes 4 optical images and 3 saar images. Let me know if you’d like to analyze them further
 8,"Using the most recent high-resolution optical image, identify all military aircraft types at this airport.","The latest high-resolution optical image from the 11th of February 2025 shows, Two F-4 Phantom fighter aircraft parked in the open at the first western Operational Readiness Platform"
 9,Is it operational?,"Yes, based on imagery from the past two weeks and beyond, the F-4 Phantom appears operational. An activity based intelligence analysis is also displayed for review."
 10,Why is there no optical imagery from the last week?,"The area was projected to be cloudy during the past week, so only sar captures were prioritized for consistent monitoring."
@@ -22,7 +22,7 @@
 21,I don’t know much about this location. What is BNPP?,"The Bushehr Nuclear Power Plant (BNPP) features a Russian-built VVER-1000 reactor, using 5% enriched uranium-235 fuel to generate 1000 mega watts. While Reactor 1 is operational, Reactors 2 and 3 are under construction."
 22,Show me more information about the major changes in the Power Plant,"Based on detected thermal imagery, the plant was operational but showed reduced activity starting on the 19th of May 2024, with this status confirmed up to the most recent imagery on the 17th of January 2025. "
 23,Generate and open the report on the Power Plant.,Here is the generated report. All collected information has been compiled into the report. Let me know if you'd like to review or refine any specific sections.
-24,"Close it, and Label it as restricted. Also, increase thermal coverage of the area.",Report is desseminated. Additional Thermal Imagery for this AOI is requested. Next capture is expected on the 22nd of February 2025.
+24,"Close it, and Label it as restricted. Also, increase thermal coverage of the area.",Report is desseminated. Additional Thermal Imagery is requested. Next capture is expected on the 22nd of February 2025.
 25,Thank you.,"You’re welcome, would you like further assistance?"
 26,Take me to Bandar Abbas Naval port and show me the imagery there.,Zooming into Bandar Abbas port along with all available imagery.
 27,Tell me more about this port?,"Bandar Abbas Port has three main areas: a commercial section used for fishing and trade, a naval military base, and an IRGC-controlled area.."

@@ -32,7 +32,7 @@
     {
         "udp": "2.7",
         "question": "Zoom into the airport and tell me. What satellite imagery do you have over this airport? ",
-        "answer": "audios/matilda/1_13827.mp3"
+        "answer": "audios/matilda/scenario_2.7.mp3"
     },
     {
         "udp": "2.8",
@@ -51,7 +51,7 @@
     },
     {
         "udp": "2.11",
-        "question": "analyze the latest two-star imagery ",
+        "question": "analyze the latest two sar imagery ",
         "answer": "audios/matilda/1_19243.mp3"
     },
     {
@@ -76,12 +76,12 @@
     },
     {
         "udp": "2.16",
-        "question": "What are the specifications of the SU-35 Flanker?",
-        "answer": "audios/matilda/1_7356.mp3"
+        "question": "What are the capabilities of the SU-35 Flanker?",
+        "answer": "audios/matilda/scenario_2.16.mp3"
     },
     {
         "udp": "2.17",
-        "question": "The Z-TEP threat to UA military forces if deployed from Banda Abbas or Konurak Airpods.",
+        "question": "Is it a threat to UAE military forces if deployed from Bandar Abbas or Konarak Airports?",
         "answer": "audios/matilda/1_14767.mp3"
     },
     {
@@ -111,8 +111,8 @@
     },
     {
         "udp": "2.22",
-        "question": "Show me more information about all the latest changes? ",
-        "answer": "audios/matilda/1_8200.mp3"
+        "question": "Show me more information about the major changes in the Power Plant",
+        "answer": "audios/matilda/scenario_2.22.mp3"
     },
     {
         "udp": "2.23",
