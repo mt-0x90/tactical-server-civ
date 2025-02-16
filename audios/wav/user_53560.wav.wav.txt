@@ -1,0 +1,1 @@
+ Show me land cover classification of Khalifa city.

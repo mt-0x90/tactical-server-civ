@@ -1,0 +1,1 @@
+ Analyze and detect the new image and show me any suspected activity of the ship.

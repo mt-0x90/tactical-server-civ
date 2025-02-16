@@ -18,17 +18,17 @@ app = Flask(__name__)
 app.config['SECRET_KEY'] = 'secret!'
 socketio = SocketIO(app, cors_allowed_origins="*")
 pygame.mixer.init()
-email_handler = EmailHandler("credentials.json")
+#email_handler = EmailHandler("credentials.json")
 report_fpath = "docs/sample.pdf"
 creds = json.load(open(os.environ['AGENTCONFIG']))
-stt_handler = SttPipeline(config=creds, use_local=True)
+stt_handler = SttPipeline(config=creds, has_cpp=True)
 rag = RagPipeline(use_ollama=True)
 network_manager = NetworkManager()
 
 def play_audio(fpath):
     playsound(fpath)
 
-def play_audio(file_path):
+def play_audio(file_path, has_alert=False, alert_path=None):
     try:
         pygame.mixer.music.load(file_path)
         pygame.mixer.music.play()
@@ -36,6 +36,13 @@ def play_audio(file_path):
         while pygame.mixer.music.get_busy():
             eventlet.sleep(0.1)  # Yield control for event processing.
         network_manager.send_message("stop")
+        if has_alert:
+            pygame.mixer.music.load(alert_path)
+            pygame.mixer.music.play()
+            network_manager.send_message("start")
+            while pygame.mixer.music.get_busy():
+                eventlet.sleep(0.1)  # Yield control for event processing.
+            network_manager.send_message("stop")
     except pygame.error as e:
         print(f"Error loading/playing audio: {e}")
 
@@ -43,7 +50,6 @@ def monitor_audio():
     try:
         while pygame.mixer.music.get_busy():
             time.sleep(0.1)
-        network_manager.send_message("stop")
     except Exception as e:
         print(f"Exception with pygame: {e}")
 
@@ -124,12 +130,13 @@ def handle_audio(data):
             network_manager.send_message(udp_signal)
             time.sleep(1)
             if audio_player == "server":
-                thread = threading.Thread(target=play_audio, args=(answer,))
+                thread = threading.Thread(target=play_audio, args=(answer,has_alert,alert_msg))
                 thread.start()
-                
-                if has_alert and os.path.exists(alert_msg):
-                    thread = threading.Thread(target=play_audio, args=(alert_msg,))
-                    thread.start()
+                # if has_alert and os.path.exists(alert_msg):
+                #     while pygame.mixer.music.get_busy():
+                #         eventlet.sleep(0.1)
+                #     thread = threading.Thread(target=play_audio, args=(alert_msg,))
+                #     thread.start()
                     # network_manager.send_message("stop")
             if str(udp_signal) == "1.16":
                 # send an email with the report to Khalid
