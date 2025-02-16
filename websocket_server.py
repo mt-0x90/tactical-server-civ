@@ -18,7 +18,7 @@ app = Flask(__name__)
 app.config['SECRET_KEY'] = 'secret!'
 socketio = SocketIO(app, cors_allowed_origins="*")
 pygame.mixer.init()
-# email_handler = EmailHandler("credentials.json")
+email_handler = EmailHandler("credentials.json")
 report_fpath = "docs/sample.pdf"
 creds = json.load(open(os.environ['AGENTCONFIG']))
 stt_handler = SttPipeline(config=creds, use_local=True)
@@ -131,12 +131,16 @@ def handle_audio(data):
                     thread = threading.Thread(target=play_audio, args=(alert_msg,))
                     thread.start()
                     # network_manager.send_message("stop")
-            if str(udp_signal) == "1.13":
+            if str(udp_signal) == "1.16":
                 # send an email with the report to Khalid
-                pass
+                thread = threading.Thread(target=email_handler.send_email, args=([report_fpath],))
+                thread.start()
         elif flag == "dismiss":
             # dismiss the notification
             network_manager.send_message(udp_signal)
+        elif flag == "email_test":
+            thread = threading.Thread(target=email_handler.send_email, args=([report_fpath],))
+            thread.start()
         else:
             # reset the platform
             network_manager.send_message("1.1")

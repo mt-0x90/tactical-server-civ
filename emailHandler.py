@@ -3,6 +3,11 @@ from google.auth.transport.requests import Request
 from google.oauth2.credentials import Credentials
 from google_auth_oauthlib.flow import InstalledAppFlow
 from email.message import EmailMessage
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
+from email.mime.base import MIMEBase
+from email import encoders
+import mimetypes
 from googleapiclient.discovery import build
 import json
 import time
@@ -16,7 +21,7 @@ class EmailHandler:
     self.creds = None
     self.service = None
     self.scopes = ["https://www.googleapis.com/auth/gmail.readonly","https://www.googleapis.com/auth/gmail.send"]
-    self.forward_to = "detectphishing.emails@gmail.com"
+    self.forward_to = "mthandazo.ndhlovu@tii.ae"
     self.tokens_fpath = "tokens.json"
     self.local_history = "local_history.json"
     self.msg_content = {}
@@ -50,26 +55,25 @@ class EmailHandler:
 
   def send_email(self, to_email:str, attachments: list=None):
     try:
-      # Send the email as per Gmail API documentation
-      message = EmailMessage()
-      if attachments:
-        for attachment in attachments:
-          with open(attachment, 'rb') as content_file:
-            content = content_file.read()
-            message.add_attachment(content, maintype='application', subtype= (attachment.split('.')[1]), filename=attachment)
-      message.set_content(f"[*] TACTICA AI [*]\n\n\nDear Operator,\n\n\nFind attached the report.")
-      message['To'] = to_email
-      message['From'] = "mthandazogegane@gmail.com"
-      message['Subject'] = "Tactica AI Report"
-      encoded_message = base64.urlsafe_b64encode(message.as_bytes()).decode()
-      create_message = {"raw": encoded_message}
+      mime_message = EmailMessage()
+      # headers
+      mime_message["To"] = to_email
+      mime_message["From"] = "tactica.ai.platfrom@gmail.com"
+      mime_message["Subject"] = "Tactica AI Report"
+      # text
+      mime_message.set_content("Dear Operator, Find the attached report. Please do not reply.")
+      attachment_filename = sys.argv[1]
+      type_subtype, _ = mimetypes.guess_type(attachment_filename)
+      maintype, subtype = type_subtype.split("/")
+      with open(attachment_filename, "rb") as fp:
+        attachment_data = fp.read()
+      mime_message.add_attachment(attachment_data, maintype, subtype)
+      encoded_message = base64.urlsafe_b64encode(mime_message.as_bytes()).decode()
+      create_draft_request_body = {"raw": encoded_message}
       send_message = (
-        self.service.users().messages().send(userId="me", body=create_message).execute()
+        self.service.users().messages().send(userId="me", body=create_draft_request_body).execute()
       )
       print(f"[*] Message sent to {self.forward_to}")
       print(f"[*] Message id: {send_message['id']}")
     except Exception as e:
       print(f"Exception: {e}")
-
-emailh = EmailHandler(sys.argv[1])
-emailh.send_email("mthandazondhlovu34@gmail.com", [sys.argv[2]])

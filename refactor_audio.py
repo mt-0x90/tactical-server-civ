@@ -32,13 +32,19 @@ for _, row in tqdm(df.iterrows()):
     row_id = f"2.{row_data.get('udp')}"  # Ensure 'id' is the key used in both CSV and dictionaries
     if row_id in data_mapping:
         # If id exists, update the corresponding dictionary with new data
-        if row_id in refactor_mil:
-            qtn = data_mapping[row_id]['question']
+        # if row_id in refactor_mil:
+        #     qtn = data_mapping[row_id]['question']
+        #     fpath = data_mapping[row_id]['answer']
+        #     udp = data_mapping[row_id]['udp']
+        #     row_data['udp'] = row_id
+        #     nfpath = generate_audio(fpath, row_data['answer'])
+        #     row_data['answer'] = nfpath
+        #     data_mapping[row_id].update(row_data)
+        if row_id != "1.1" or row_id != "2.1":
             fpath = data_mapping[row_id]['answer']
             udp = data_mapping[row_id]['udp']
             row_data['udp'] = row_id
-            nfpath = generate_audio(fpath, row_data['answer'])
-            row_data['answer'] = nfpath
+            row_data['answer'] = fpath
             data_mapping[row_id].update(row_data)
     else:
         # If id does not exist, append the new row data to the list
