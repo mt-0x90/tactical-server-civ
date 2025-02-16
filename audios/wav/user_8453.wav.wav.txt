@@ -1,0 +1,2 @@
+ Using the most recent high-resolution optical image,
+ identify all military aircraft at the airport.

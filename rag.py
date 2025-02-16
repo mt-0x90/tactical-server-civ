@@ -275,6 +275,7 @@ class RagPipeline:
     def handle_user_text(self, user_text, voice_id="chris", is_local=False, scene_type="civil"):
         scen_t = "civil" if scene_type == "civilian" else scene_type
         if user_text == "error":
+            bot_answer = "audios/matilda/default_fallback.mp3"
             return bot_answer, "-1", False
         his_answer = self.check_scenario(user_text, voice_id.lower(), scen_t)
         if his_answer:

@@ -1,0 +1,1 @@
+ - eliminate damage and detect all ships.
